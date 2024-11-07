@@ -658,7 +658,7 @@ module "aws_for_fluentbit" {
   namespace        = local.aws_for_fluentbit_namespace
   create_namespace = try(var.aws_for_fluentbit.create_namespace, false)
   chart            = try(var.aws_for_fluentbit.chart, "aws-for-fluent-bit")
-  chart_version    = try(var.aws_for_fluentbit.chart_version, "0.1.32")
+  chart_version    = try(var.aws_for_fluentbit.chart_version, "0.1.34")
   repository       = try(var.aws_for_fluentbit.repository, "https://aws.github.io/eks-charts")
   values           = try(var.aws_for_fluentbit.values, [])
 

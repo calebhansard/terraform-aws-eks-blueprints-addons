@@ -3187,7 +3187,7 @@ module "metrics_server" {
   namespace        = try(var.metrics_server.namespace, "kube-system")
   create_namespace = try(var.metrics_server.create_namespace, false)
   chart            = try(var.metrics_server.chart, "metrics-server")
-  chart_version    = try(var.metrics_server.chart_version, "3.12.0")
+  chart_version    = try(var.metrics_server.chart_version, "3.12.2")
   repository       = try(var.metrics_server.repository, "https://kubernetes-sigs.github.io/metrics-server/")
   values           = try(var.metrics_server.values, [])
 

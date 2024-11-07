@@ -2255,7 +2255,7 @@ module "external_dns" {
   namespace        = local.external_dns_namespace
   create_namespace = try(var.external_dns.create_namespace, true)
   chart            = try(var.external_dns.chart, "external-dns")
-  chart_version    = try(var.external_dns.chart_version, "1.14.3")
+  chart_version    = try(var.external_dns.chart_version, "1.15.0")
   repository       = try(var.external_dns.repository, "https://kubernetes-sigs.github.io/external-dns/")
   values           = try(var.external_dns.values, ["provider: aws"])
 

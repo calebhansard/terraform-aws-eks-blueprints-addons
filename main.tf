@@ -1758,7 +1758,7 @@ module "aws_privateca_issuer" {
   namespace        = local.aws_privateca_issuer_namespace
   create_namespace = try(var.aws_privateca_issuer.create_namespace, false)
   chart            = try(var.aws_privateca_issuer.chart, "aws-privateca-issuer")
-  chart_version    = try(var.aws_privateca_issuer.chart_version, "v1.2.7")
+  chart_version    = try(var.aws_privateca_issuer.chart_version, "v1.4.0")
   repository       = try(var.aws_privateca_issuer.repository, "https://cert-manager.github.io/aws-privateca-issuer")
   values           = try(var.aws_privateca_issuer.values, [])
 

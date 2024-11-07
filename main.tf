@@ -251,7 +251,7 @@ module "argo_events" {
   namespace        = try(var.argo_events.namespace, "argo-events")
   create_namespace = try(var.argo_events.create_namespace, true)
   chart            = try(var.argo_events.chart, "argo-events")
-  chart_version    = try(var.argo_events.chart_version, "2.4.3")
+  chart_version    = try(var.argo_events.chart_version, "2.4.8")
   repository       = try(var.argo_events.repository, "https://argoproj.github.io/argo-helm")
   values           = try(var.argo_events.values, [])
 

@@ -2656,7 +2656,7 @@ module "gatekeeper" {
   namespace        = try(var.gatekeeper.namespace, "gatekeeper-system")
   create_namespace = try(var.gatekeeper.create_namespace, true)
   chart            = try(var.gatekeeper.chart, "gatekeeper")
-  chart_version    = try(var.gatekeeper.chart_version, "3.15.0")
+  chart_version    = try(var.gatekeeper.chart_version, "3.17.1")
   repository       = try(var.gatekeeper.repository, "https://open-policy-agent.github.io/gatekeeper/charts")
   values           = try(var.gatekeeper.values, [])
 

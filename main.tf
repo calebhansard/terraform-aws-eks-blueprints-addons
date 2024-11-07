@@ -3243,7 +3243,7 @@ module "secrets_store_csi_driver" {
   namespace        = try(var.secrets_store_csi_driver.namespace, "kube-system")
   create_namespace = try(var.secrets_store_csi_driver.create_namespace, false)
   chart            = try(var.secrets_store_csi_driver.chart, "secrets-store-csi-driver")
-  chart_version    = try(var.secrets_store_csi_driver.chart_version, "1.4.1")
+  chart_version    = try(var.secrets_store_csi_driver.chart_version, "1.4.6")
   repository       = try(var.secrets_store_csi_driver.repository, "https://kubernetes-sigs.github.io/secrets-store-csi-driver/charts")
   values           = try(var.secrets_store_csi_driver.values, [])
 

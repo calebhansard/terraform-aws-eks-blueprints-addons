@@ -3299,7 +3299,7 @@ module "secrets_store_csi_driver_provider_aws" {
   namespace        = try(var.secrets_store_csi_driver_provider_aws.namespace, "kube-system")
   create_namespace = try(var.secrets_store_csi_driver_provider_aws.create_namespace, false)
   chart            = try(var.secrets_store_csi_driver_provider_aws.chart, "secrets-store-csi-driver-provider-aws")
-  chart_version    = try(var.secrets_store_csi_driver_provider_aws.chart_version, "0.3.6")
+  chart_version    = try(var.secrets_store_csi_driver_provider_aws.chart_version, "0.3.10")
   repository       = try(var.secrets_store_csi_driver_provider_aws.repository, "https://aws.github.io/secrets-store-csi-driver-provider-aws")
   values           = try(var.secrets_store_csi_driver_provider_aws.values, [])
 

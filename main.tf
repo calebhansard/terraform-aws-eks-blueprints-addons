@@ -2029,7 +2029,7 @@ module "cluster_autoscaler" {
   namespace        = local.cluster_autoscaler_namespace
   create_namespace = try(var.cluster_autoscaler.create_namespace, false)
   chart            = try(var.cluster_autoscaler.chart, "cluster-autoscaler")
-  chart_version    = try(var.cluster_autoscaler.chart_version, "9.35.0")
+  chart_version    = try(var.cluster_autoscaler.chart_version, "9.43.2")
   repository       = try(var.cluster_autoscaler.repository, "https://kubernetes.github.io/autoscaler")
   values           = try(var.cluster_autoscaler.values, [])
 

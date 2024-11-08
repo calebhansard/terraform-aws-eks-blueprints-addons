@@ -83,7 +83,7 @@ module "argo_rollouts" {
   namespace        = try(var.argo_rollouts.namespace, "argo-rollouts")
   create_namespace = try(var.argo_rollouts.create_namespace, true)
   chart            = try(var.argo_rollouts.chart, "argo-rollouts")
-  chart_version    = try(var.argo_rollouts.chart_version, "2.34.3")
+  chart_version    = try(var.argo_rollouts.chart_version, "2.37.8")
   repository       = try(var.argo_rollouts.repository, "https://argoproj.github.io/argo-helm")
   values           = try(var.argo_rollouts.values, [])
 

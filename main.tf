@@ -481,7 +481,7 @@ module "aws_efs_csi_driver" {
   namespace        = local.aws_efs_csi_driver_namespace
   create_namespace = try(var.aws_efs_csi_driver.create_namespace, false)
   chart            = try(var.aws_efs_csi_driver.chart, "aws-efs-csi-driver")
-  chart_version    = try(var.aws_efs_csi_driver.chart_version, "2.5.6")
+  chart_version    = try(var.aws_efs_csi_driver.chart_version, "2.5.7")
   repository       = try(var.aws_efs_csi_driver.repository, "https://kubernetes-sigs.github.io/aws-efs-csi-driver/")
   values           = try(var.aws_efs_csi_driver.values, [])
 
